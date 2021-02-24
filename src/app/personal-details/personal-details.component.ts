@@ -12,6 +12,8 @@ export class PersonalDetailsComponent implements OnInit {
   email: string;
   college: string;
   address: string;
+  emailHtml="<Email>";
+  phoneHtml="<Phone>";
 
   constructor() { }
 

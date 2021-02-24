@@ -1,10 +1,22 @@
-.personal-details{
-    background-color:#53536b;
-    color: #fff;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    .row{
-        margin-top: 40px;
+.personal-details {
+  background-image: linear-gradient(black, grey);
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  color: #fff;
+  .name {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 3.25rem;
+    .info-label{
+        font-size: 24px;
+        font-weight: 400;
     }
+  }
 }
