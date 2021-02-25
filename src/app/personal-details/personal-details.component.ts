@@ -10,10 +10,13 @@ export class PersonalDetailsComponent implements OnInit {
   myName: string;
   phoneNumber: number;
   email: string;
-  college: string;
   address: string;
+  college: string;
+  hobbies: string;
+  collegeHtml="<College>";
   emailHtml="<Email>";
   phoneHtml="<Phone>";
+  hobbiesHtml="<Hobbies>";
 
   constructor() { }
 
@@ -22,7 +25,7 @@ export class PersonalDetailsComponent implements OnInit {
     this.phoneNumber = 9623833387;
     this.email = "akash.takawale11@gmail.com";
     this.college = "Dr. D.Y.Patil Institute of Engineering Management and Research";
-    this.address = "Gadiya Estate, Nandanvan Society, Kothrud, Pune - 411038"
+    this.address = "Gadiya Estate, Nandanvan Society, Kothrud, Pune - 411038";
+    this.hobbies = "Trekking, Badminton, Listening Music";
   }
-
 }

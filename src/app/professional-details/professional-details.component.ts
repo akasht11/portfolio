@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessionalDetailsComponent implements OnInit {
 
+  navContent="CITI";
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showContent(type: string){
+    this.navContent = type;
+  }
 }

@@ -1,17 +1,14 @@
-<div class="parent-bg">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Logo</a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav pull-right">
-              <li class="active"><a routerLink="cover">Home</a></li>
-              <li><a routerLink="personal-details">About</a></li>
-              <li><a routerLink="professional-details">Link</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
+<nav class="navbar navbar-expand-lg bg-dark ">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/cover" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/personal-details" routerLinkActive="active">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/professional-details" routerLinkActive="active">Career</a>
+      </li>
+    </ul>
+</nav>
 <router-outlet></router-outlet>
-</div>

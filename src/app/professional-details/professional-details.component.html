@@ -1,30 +1,66 @@
-<section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
-    <div class="container">
-      <div class="row">
-        <div class="clearfix about-inner">
-
-          <div class="col-sm-12 col-md-4">
-            <div class="person-about">
-              <h3 class="about-subtitle">My Story</h3>
-              <p>Hello, I’m a UI/UX Designer &amp; Front End Developer from Mumbai, India. An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, <br>
-
-                </p>
-            </div>
-          </div>
-          <!-- about me description -->
-
-          <div class="col-sm-10 col-md-4">
-            <div class="person-info">
-              <h3 class="about-subtitle">Personal Information</h3>
-              <h5><span>Name :</span> Vipul Pore</h5>
-              <h5><span>Age :</span> 28 Years</h5>
-              <h5><span>Phone :</span> +91 96642 81633</h5>
-              <h5><span>Phone :</span> +91 98348 31326</h5>
-              <h5><span>Email :</span> vipulpore25@gmail.com</h5>
-              <h5><span>Address :</span> Mumbai, India</h5>
-            </div>
-          </div>
-        </div>
+<div class="professional-details">
+  <h3>Project Details:</h3>
+  <div class="tabbed-container">
+    <nav class="navbar1 navbar-inverse">
+      <ul class="nav flex-column">
+        <li class="nav-item active">
+          <a class="nav-link" (click)="showContent('CITI')">CITI Bank<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="showContent('Nielsen')">Nielsen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="showContent('Skills')">Skills</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="project-main">
+      <div *ngIf="navContent === 'CITI'" class="project1">
+        <h4>CITI Bank</h4>
+        <p>
+          The project caters to the different requirements of the customers
+          regarding fund transfer, account opening and managing different cards.
+          This project acts as middleware for different customer services. It
+          helps in transforming channels data into host system, there are
+          multiple types of modules such as payment, retail & cards.
+        </p>
+        <h5>Dev. Environment :</h5>
+        <p>Angular, HTML5, Bootstrap, JavaScript, MySQL</p>
+        <h5>Role :</h5>
+        <p>
+          Requirement Analysis for the project/ CR / production issues, Create
+          responsive Design, Manage Style guide & components, integration of
+          modules with the web services and testing the same, Task update using
+          Jira.
+        </p>
+      </div>
+      <div *ngIf="navContent === 'Nielsen'" class="project2">
+        <h4>Global Store Repository – Nielsen</h4>
+        <p>
+          This is a market analysis and research platform application, which
+          allows storing all store related audit, and survey related information
+          to be store.  Implementation of new feature, enhancement of existing
+          features and fixing bugs
+        </p>
+        <h5>Dev. Environment :</h5>
+        <p>Angular, HTML, Jenkins, RLM</p>
+        <h5>Role :</h5>
+        <p>
+          Requirement Analysis for the project, Integration of frontend
+          activities with the underlying business layer & Created reusable
+          components.
+        </p>
+      </div>
+      <div *ngIf="navContent === 'Skills'" class="project2">
+        <h4>Technical Skills :</h4>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>Angular 6/7, AngularJS 1.x</li>
+          <li>Java, XML, SOAP, REST</li>
+          <li>Jenkins, RLM, SoapUI, Postman</li>
+        </ul>
       </div>
     </div>
-</section>
+  </div>
+</div>

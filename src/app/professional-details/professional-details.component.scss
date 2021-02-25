@@ -1,0 +1,22 @@
+.professional-details {
+  background-image: linear-gradient(black, grey);
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  line-height: 2.25rem;
+  color: #fff;
+  .tabbed-container {
+    display: flex;
+    .navbar1{
+        position: relative;
+        min-height: inherit;
+        .nav-link{
+            min-width: max-content;
+        }
+    }
+    .project-main {
+      line-height: 2.25rem;
+      color: #fff;
+    }
+  }
+}

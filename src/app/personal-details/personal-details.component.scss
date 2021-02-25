@@ -13,10 +13,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    line-height: 3.25rem;
+    line-height: 2.25rem;
     .info-label{
         font-size: 24px;
         font-weight: 400;
+    }
+  }
+  .effect{
+    :hover {
+      //transition: width 2s;
+      color:#b3ffff;
+      font-size: 29px;
+      font-weight: bold;
+      //box-shadow: 10px 10px;
+      //background: #fff;
     }
   }
 }
